@@ -5,6 +5,7 @@
 
 #root {
   --buttons-color: #E4E5EA;
+  --montserrat-font: Montserrat;
 
   width: 100vw;
   height: 100vh;
