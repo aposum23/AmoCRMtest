@@ -1,0 +1,11 @@
+#root {
+  --buttons-color: #E4E5EA;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 80vw;
+  margin: 5vh auto 0 auto;
+}

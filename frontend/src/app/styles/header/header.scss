@@ -1,0 +1,7 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr repeat(5, 3fr) 5fr;
+  grid-template-rows: 73px;
+
+  align-items: start;
+}
