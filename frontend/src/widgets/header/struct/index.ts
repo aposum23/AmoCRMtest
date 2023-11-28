@@ -1,4 +1,4 @@
-import {ButtonType} from "../types";
+import {ButtonType} from "../../../app/types/buttons.ts";
 
 export const HeaderButtonsStuct: ButtonType[] = [
     {

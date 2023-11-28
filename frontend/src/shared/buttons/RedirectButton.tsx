@@ -8,6 +8,7 @@ const RedirectButton = ({ label, url, fontSize }: RedirectButtonPropsType) => {
 
     const redirectTo = () => {
         console.log(`You redirected to ${url}`);
+        if (url.includes('youtube')) location.href = url;
     };
 
     return (

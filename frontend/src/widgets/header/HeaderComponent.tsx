@@ -1,5 +1,5 @@
 import {HeaderButtonsStuct} from "./struct";
-import {ButtonType} from "./types";
+import {ButtonType} from "../../app/types/buttons.ts";
 import RedirectButton from "../../shared/buttons/RedirectButton.tsx";
 import Welbex from '@/app/images/welbex.svg';
 import Telegram from '@/app/images/telegram.svg';
