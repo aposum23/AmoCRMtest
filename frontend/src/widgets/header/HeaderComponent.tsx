@@ -11,7 +11,7 @@ import '@/app/styles/header/header.scss';
 const HeaderComponent = () => {
 
     return (
-        <div className='wrapper'>
+        <div className='header'>
             <div className="header__logo">
                 <img src={Welbex} alt="Welbex logo"/>
                 <p>крупный интегратор CRM в России и ещё 8 странах</p>

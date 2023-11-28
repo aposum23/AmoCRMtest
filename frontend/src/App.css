@@ -6,7 +6,7 @@
 #root {
   --buttons-color: #E4E5EA;
   --montserrat-font: Montserrat;
-
+  --gradient-1: linear-gradient(70deg, #FCB045, #FF3F78);
   width: 100vw;
   height: 100vh;
 }

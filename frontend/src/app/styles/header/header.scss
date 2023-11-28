@@ -1,7 +1,6 @@
-.wrapper {
+.header {
   display: grid;
   grid-template-columns: 2fr repeat(5, 2fr) 3fr 4fr repeat(3, 1fr);
-  grid-template-rows: 73px;
   grid-gap: 2rem;
 
   align-items: start;
