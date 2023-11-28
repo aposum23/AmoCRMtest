@@ -1,7 +1,22 @@
 .wrapper {
   display: grid;
-  grid-template-columns: 2fr repeat(5, 3fr) 5fr;
+  grid-template-columns: 2fr repeat(5, 2fr) 3fr 4fr 1fr 1fr 1fr;
   grid-template-rows: 73px;
 
   align-items: start;
+
+  & p {
+    margin: 0;
+  }
+}
+
+.header__logo {
+  & p {
+    font-size: 10px;
+    color: var(--buttons-color);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
 }
