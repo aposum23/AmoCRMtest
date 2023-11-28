@@ -1,6 +1,6 @@
 .content {
   display: grid;
-  grid-template-columns: repeat(2, 4fr) 3fr;
+  grid-template-columns: 4fr 5fr 3fr;
   margin-top: 4rem;
 
   & h1 {
@@ -51,5 +51,32 @@
     line-height: normal;
     letter-spacing: 0.9px;
     text-transform: uppercase;
+  }
+
+  & .content__text-describe {
+    display: grid;
+    grid-template-columns: repeat(2, 5fr);
+    grid-gap: 1rem;
+    text-align: right;
+
+    & h2 {
+      margin-bottom: 0;
+      text-align: right;
+      font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+    }
+    & p {
+      margin: 0;
+      font-family: var(--montserrat-font);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
   }
 }

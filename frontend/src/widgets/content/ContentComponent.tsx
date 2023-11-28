@@ -1,4 +1,6 @@
 import '@/app/styles/content/content.scss';
+import {ContentStruct} from "./struct/content.ts";
+import {ContentType} from "./types";
 
 const ContentComponent = () => {
     return (
@@ -13,6 +15,18 @@ const ContentComponent = () => {
             <div className="spacer"></div>
             <div>
                 <h2 className="content__text">Вместе с <span className="content__text-gradient">БЕСПЛАТНОЙ КОНСУЛЬТАЦИЕЙ</span>  мы дарим:</h2>
+                <div className="content__text-describe">
+                    {
+                        ContentStruct.map((content: ContentType) => {
+                            return (
+                                <div className="content__text-describe-point">
+                                    <h2>{ content.label }</h2>
+                                    <p>{ content.description }</p>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
             </div>
         </div>
     )
