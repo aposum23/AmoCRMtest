@@ -7,9 +7,11 @@
   --buttons-color: #E4E5EA;
   --montserrat-font: Montserrat;
   --gradient-1: linear-gradient(70deg, #FCB045, #FF3F78);
+  --text-color: #656566;
 
   width: 100vw;
-  height: 100vh;
+  height: 100%;
+  background: url("@/app/images/background.svg") no-repeat fixed;
 }
 
 .container {

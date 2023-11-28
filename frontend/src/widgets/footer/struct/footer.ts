@@ -17,36 +17,36 @@ export const MenuStruct: ButtonType[] = [
         url: 'Cost_calculation'
     },
     {
-        label: 'Услуги',
-        url: 'services'
-    },
-    {
-        label: 'Виджеты',
-        url: 'widgets'
-    },
-    {
-        label: 'Интеграции',
-        url: 'integrations'
-    },
-    {
-        label: 'Наши клиенты',
-        url: 'our_clients'
-    },
-    {
         label: 'Кейсы',
         url: 'cases'
+    },
+    {
+        label: 'Услуги',
+        url: 'services'
     },
     {
         label: 'Благодарственные письма',
         url: 'thanksgiving_letters'
     },
     {
+        label: 'Виджеты',
+        url: 'widgets'
+    },
+    {
         label: 'Сертификаты',
         url: 'certificates'
     },
     {
+        label: 'Интеграции',
+        url: 'integrations'
+    },
+    {
         label: 'Блог на Yutube',
         url: 'https://www.youtube.com/@amo_blog'
+    },
+    {
+        label: 'Наши клиенты',
+        url: 'our_clients'
     },
     {
         label: 'Вопрос / Ответ',
