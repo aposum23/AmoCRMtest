@@ -1,4 +1,19 @@
 .get-consalting {
   background: #4077F3;
+
   color: var(--buttons-color);
+  text-align: center;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  padding: .2rem 0;
+  margin-top: 2rem;
+  margin-left: auto;
+  width: 262px;
+
+  cursor: pointer;
+  user-select: none;
 }

@@ -1,6 +1,7 @@
 import '@/app/styles/content/content.scss';
 import {ContentStruct} from "./struct/content.ts";
 import {ContentType} from "./types";
+import GetConsalting from "../../features/GetConsalting.tsx";
 
 const ContentComponent = () => {
     return (
@@ -27,6 +28,7 @@ const ContentComponent = () => {
                         })
                     }
                 </div>
+                <GetConsalting />
             </div>
         </div>
     )
