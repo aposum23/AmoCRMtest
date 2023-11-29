@@ -19,6 +19,7 @@ export const HeaderButtonsStuct: ButtonType[] = [
     },
     {
        label: 'Сертификаты',
-       url: 'certificates'
+       url: 'certificates',
+       deleteInMobile: true
     }
 ]

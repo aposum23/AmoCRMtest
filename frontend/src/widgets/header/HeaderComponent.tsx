@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import {HeaderButtonsStuct} from "./struct";
 import {ButtonType} from "../../app/types/buttons.ts";
 import RedirectButton from "../../shared/buttons/RedirectButton.tsx";
@@ -9,23 +10,37 @@ import Whatsapp from '@/app/images/whatsapp.svg';
 import '@/app/styles/header/header.scss';
 
 const HeaderComponent = () => {
+    const [ mobileVersion, setMobileVersion ] = useState(false);
+
+    useEffect(() => {
+        setMobileVersion(window.screen.width < 576);
+        console.log(mobileVersion);
+    }, [mobileVersion]);
 
     return (
         <div className='header'>
-            <div className="header__logo">
-                <img src={Welbex} alt="Welbex logo"/>
-                <p>крупный интегратор CRM в России и ещё 8 странах</p>
-            </div>
+            {!mobileVersion ?
+                <div className="header__logo">
+                    <img src={Welbex} alt="Welbex logo"/>
+                    <p>крупный интегратор CRM в России и ещё 8 странах</p>
+                </div>
+                : null
+            }
             {
                 HeaderButtonsStuct.map((button: ButtonType) => {
-                    return (<RedirectButton label={button.label} url={button.url} key={button.url}/>)
+                    if (!button.deleteInMobile) return (<RedirectButton label={button.label} url={button.url} key={button.url}/>);
                 })
             }
-            <div className="spacer"></div>
-            <p>+7 555 555-55-55</p>
-            <img src={Telegram} alt="Telegram" />
-            <img src={Viber} alt="Viber" />
-            <img src={Whatsapp} alt="Whatsapp" />
+            {!mobileVersion ?
+                <>
+                    <div className="spacer"></div>
+                    <p>+7 555 555-55-55</p>
+                    <img src={Telegram} alt="Telegram" />
+                    <img src={Viber} alt="Viber" />
+                    <img src={Whatsapp} alt="Whatsapp" />
+                </>
+                : null
+            }
         </div>
     )
 }

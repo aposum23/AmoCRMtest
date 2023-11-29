@@ -61,7 +61,6 @@
 
     & h2 {
       margin-bottom: 0;
-      text-align: right;
       font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
       font-size: 18px;
       font-style: normal;
@@ -77,6 +76,21 @@
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .content {
+    grid-template-columns: 5fr 5fr;
+    padding: 0 1rem;
+
+    & .content__text {
+      text-align: left;
+    }
+
+    & .content__text-describe {
+      text-align: left;
     }
   }
 }

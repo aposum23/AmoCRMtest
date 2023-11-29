@@ -1,5 +1,6 @@
 export type ButtonType = {
     label: string,
     url: string,
-    fontSize?: number
+    fontSize?: number,
+    deleteInMobile?: boolean
 }

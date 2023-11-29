@@ -2,8 +2,16 @@ import '@/app/styles/content/content.scss';
 import {ContentStruct} from "./struct/content.ts";
 import {ContentType} from "./types";
 import GetConsalting from "../../features/GetConsalting.tsx";
+import {useEffect, useState} from "react";
 
 const ContentComponent = () => {
+    const [ mobileVersion, setMobileVersion ] = useState(false);
+
+    useEffect(() => {
+        setMobileVersion(window.screen.width < 576);
+        console.log(mobileVersion);
+    }, [mobileVersion]);
+
     return (
         <div className="content">
             <div>
@@ -22,13 +30,13 @@ const ContentComponent = () => {
                             return (
                                 <div className="content__text-describe-point">
                                     <h2>{ content.label }</h2>
-                                    <p>{ content.description }</p>
+                                    { !mobileVersion ? <p>{ content.description }</p> : null }
                                 </div>
                             )
                         })
                     }
                 </div>
-                <GetConsalting />
+                { !mobileVersion ? <GetConsalting /> : null }
             </div>
         </div>
     )
