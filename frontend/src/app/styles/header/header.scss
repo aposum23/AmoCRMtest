@@ -1,0 +1,30 @@
+.header {
+  display: grid;
+  grid-template-columns: 2fr repeat(5, 2fr) 3fr 4fr repeat(3, 1fr);
+  grid-gap: 2rem;
+
+  align-items: start;
+
+  & p {
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    background: var(--mobile-background);
+    padding: 1rem;
+    grid-template-columns: repeat(4, 2fr);
+  }
+}
+
+.header__logo {
+  & p {
+    font-size: 10px;
+    color: var(--buttons-color);
+    font-family: var(--montserrat-font);
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+}

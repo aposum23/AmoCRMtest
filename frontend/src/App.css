@@ -1,0 +1,28 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("./app/fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+#root {
+  --buttons-color: #E4E5EA;
+  --montserrat-font: Montserrat;
+  --gradient-1: linear-gradient(70deg, #FCB045, #FF3F78);
+  --text-color: #656566;
+  --mobile-background: #0E1014;
+
+  background: url("@/app/images/background.svg") no-repeat fixed;
+  width: 100vw;
+  height: 100%;
+}
+
+.container {
+  width: 80vw;
+  margin: 5vh auto 0 auto;
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 100vw;
+    margin: 0;
+  }
+}

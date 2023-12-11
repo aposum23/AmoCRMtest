@@ -1,0 +1,10 @@
+.button {
+  user-select: none;
+  cursor: pointer;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: var(--buttons-color);
+  & p {
+    margin: 0;
+    text-align: center;
+  }
+}

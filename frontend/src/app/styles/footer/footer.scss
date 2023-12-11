@@ -1,0 +1,69 @@
+.footer {
+  display: grid;
+  grid-template-columns: 3fr 5fr 5fr;
+  grid-template-rows: max(200px);
+
+  margin-top: 3rem;
+
+  & h3 {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    color: var(--text-color);
+  }
+
+  & .footer__about, .footer__menu {
+    & p {
+      text-align: left;
+      width: fit-content;
+
+      font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  & .footer__menu-points {
+    display: grid;
+    grid-template-columns: repeat(2, 5fr);
+
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  & .footer__contacts {
+    text-align: right;
+
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.footer__copyright {
+  display: grid;
+  grid-template-columns: 7fr 2fr;
+  text-align: right;
+  & a, p {
+    font-family: var(--montserrat-font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  & a {
+    text-decoration: underline;
+    color: var(--buttons-color);
+  }
+}
